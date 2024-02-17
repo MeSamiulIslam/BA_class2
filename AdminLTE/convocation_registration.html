@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include any necessary CSS files -->
+
+    <title>Convocation Registration</title>
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+          <!-- Left navbar links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="index3.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+      
+          <!-- Right navbar links -->
+          <ul class="navbar-nav ml-auto">
+            <!-- Navbar Search -->
+            <li class="nav-item">
+              <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+                <i class="fas fa-search"></i>
+              </a>
+              <div class="navbar-search-block">
+                <form class="form-inline">
+                  <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                      <button class="btn btn-navbar" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                      <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                        <i class="fas fa-times"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+      
+            <li class="nav-item">
+                <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+                  <i class="fas fa-expand-arrows-alt"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+                  <i class="fas fa-th-large"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+              <img src="dist/img/diu.jpeg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+              <span class="brand-text font-weight-light">Daffodil Family</span>
+            </a>
+        
+            <!-- Sidebar -->
+            <div class="sidebar">
+              <!-- Sidebar user panel (optional) -->
+              <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                  <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                </div>
+                <div class="info">
+                  <a href="#" class="d-block">Samiul Islam</a>
+                </div>
+              </div>
+        
+              <!-- Sidebar Menu -->
+              <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                  <!-- Add icons to the links using the .nav-icon class
+                       with font-awesome or any other icon font library -->
+                  <li class="nav-item menu-open">
+                    <ul class="nav nav-treeview">
+                      <li class="nav-item">
+                        <a href="./index3.html" class="nav-link active">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Dashboard</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Sidebar Menu -->
+                  <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Other menu items -->
+                        
+                        <!-- Convocation Registration Menu -->
+                        <li class="nav-item">
+                            <a href="convocation_registration.html" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Convocation Registration Form</p>
+                            </a>
+                        </li>
+                        <!-- New Menu Item -->
+                        <li class="nav-item">
+                          <a href="student_information.php" class="nav-link">
+                              <i class="far fa-circle nav-icon"></i>
+                              <p>Student Information</p>
+                          </a>
+                      </li>
+                      <!--Student Draft Information-->
+                      <li class="nav-item">
+                        <a href="save_draft.php" class="nav-link">
+                          <i class="far fa-circle nav-icon"></i>
+                          <p>Draft Information</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                </ul>
+              </nav>
+            </div>
+            <!-- /.sidebar -->
+          </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+              <div class="container-fluid">
+                <div class="row mb-2">
+                  
+                </div><!-- /.row -->
+              </div><!-- /.container-fluid -->
+            </div><!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="container-fluid">
+                    <!-- Your convocation registration form goes here -->
+                    <h1>Convocation Registration Form</h1>
+                    <form action="submit_registration.php" method="POST">
+                        <!-- Form fields for student information -->
+                        <label for="id">Id:</label>
+                        <input type="text" id="name" name="id" required>
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                        
+                        <label for="address">Address:</label>
+                        <textarea id="address" name="address" required></textarea>
+                        
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required>
+                        
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <label for="qualification">Qualification:</label>
+                        <select id="qualification" name="qualification" required>
+                          <option value="bsc">Bachelor of science(BSc)</option>
+                          <option value="msc">Master of science(MSc)</option>
+                        </select>
+                       
+                        
+                        <!-- Submit and Draft buttons -->
+                        <div class="button-container">
+                            <button type="submit" name="submit">Submit Registration</button>
+                            <button type="button" onclick="saveAsDraft()">Save as Draft</button>
+                        </div>
+                    </form>
+                </div><!-- /.container-fluid -->
+            </section><!-- /.content -->
+        </div><!-- /.content-wrapper -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-inline">
+              Anything you want
+            </div>
+            <strong>Footer content goes here</strong>
+        </footer>
+    </div><!-- /.wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+
+    <!-- OPTIONAL SCRIPTS -->
+    <!-- Include any necessary JavaScript files -->
+    <script>
+        function saveAsDraft() {
+            // This function could save the form data as a draft in the database or local storage
+            // You can implement this functionality using AJAX to send data to the server or save locally
+            alert("Information saved as draft. You can edit and submit later.");
+        }
+    </script>
+    <!-- Script to redirect to student_information.php after form submission -->
+    <script>
+      // Get the form element
+      var form = document.querySelector('form');
+
+      // Add an event listener to the form for form submission
+      form.addEventListener('submit', function(event) {
+          // Prevent the default form submission behavior
+          event.preventDefault();
+
+          // Redirect to student_information.php after form submission
+          window.location.href = 'student_information.php';
+      });
+  </script>
+</body>
+</html>
